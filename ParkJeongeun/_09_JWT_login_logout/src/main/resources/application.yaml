@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: _09_JWT_login_logout
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/springdb
+    username: sh
+    password: sh
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          auto: validate
+server:
+  servlet:
+    context-path: /app
+
+logging:
+  level:
+    root: info
+    com.sh.app: debug
+
+jwt:
+  issuer: wjddms6188@gmail.com
+  secret_key: study-springboot
